@@ -17,19 +17,7 @@ class Deck
         @deck << Card.new(suit, type, @value)
       end
     end
-    # add_values
   end
-
-  # def add_values
-  #   @deck.each do |card|
-  #     VALUES.each do |num|
-  #       card.value = num
-  #       #binding.pry
-  #     end
-  #   end
-  # end
-
-
 end
 
 some_deck = Deck.new
