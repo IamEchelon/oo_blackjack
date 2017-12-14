@@ -54,21 +54,21 @@ class Game
   def compare_hands
     case
     when @player.total > 21 && @dealer.total > 21
-      puts "Double Bust!"
+      puts " Double Bust! "
     when @player.total > 21
-      puts "Player Busts! Dealer wins!".center(50,"*")
+      puts " Player Busts! Dealer wins! ".center(50,"*")
     when @dealer.total > 21
-      puts "Dealer Busts! Player Wins!".center(50,"*")
+      puts " Dealer Busts! Player Wins! ".center(50,"*")
     when @dealer.total == @player.total
-      puts "The game is a tie".center(50,"*")
+      puts " The game is a tie ".center(50,"*")
     when @player.total == 21
-      puts "BLACKJACK! PLAYER WINS!".center(50,"*")
+      puts " BLACKJACK! PLAYER WINS! ".center(50,"*")
     when @dealer.total == 21
-      puts "Blackjack the Dealer Wins!".center(50,"*")
+      puts " Blackjack the Dealer Wins! ".center(50,"*")
     when @player.total > @dealer.total
-      puts "Player Wins!".center(50,"*")
+      puts " Player Wins! ".center(50,"*")
     else
-      puts "Dealer Wins!".center(50,"*")
+      puts " Dealer Wins! ".center(50,"*")
     end
   end
 
